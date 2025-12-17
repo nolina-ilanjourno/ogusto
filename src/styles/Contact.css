@@ -1,0 +1,265 @@
+.contact-page {
+  min-height: 100vh;
+}
+
+.contact-hero {
+  background: linear-gradient(135deg, var(--primary) 0%, #074a8e 100%);
+  padding: 4rem 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.contact-hero p {
+  font-size: 1.3rem;
+  color: var(--secondary);
+  font-weight: 300;
+}
+
+.contact-content {
+  padding: 3rem 0 5rem;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-info h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--light-gray);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: var(--secondary);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transform: translateX(5px);
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary) 0%, #074a8e 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.contact-details h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-details p {
+  color: var(--dark-gray);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+.contact-details .small {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.hours {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hour-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.hour-row:hover {
+  background: #e8e8e8;
+}
+
+.hour-row.closed {
+  opacity: 0.7;
+  background: #f9f9f9;
+}
+
+.hour-row .day {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.hour-row .time {
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.contact-map {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.map-container {
+  background: var(--light-gray);
+  border-radius: 12px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.map-placeholder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary) 0%, #074a8e 100%);
+  color: var(--white);
+  gap: 1rem;
+}
+
+.map-placeholder h3 {
+  color: var(--secondary);
+  font-size: 1.8rem;
+}
+
+.map-placeholder p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+.directions {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--light-gray);
+}
+
+.directions h3 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.directions ul {
+  list-style: none;
+}
+
+.directions li {
+  color: var(--dark-gray);
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--light-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.directions li:last-child {
+  border-bottom: none;
+}
+
+.directions strong {
+  color: var(--primary);
+}
+
+.additional-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.info-box {
+  background: var(--light-gray);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--secondary);
+}
+
+.info-box h3 {
+  color: var(--primary);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.info-box p {
+  color: var(--dark-gray);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 968px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-hero p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+
+  .additional-info {
+    grid-template-columns: 1fr;
+  }
+
+  .hour-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .hour-row .day {
+    font-size: 0.9rem;
+  }
+
+  .hour-row .time {
+    font-size: 0.85rem;
+  }
+}

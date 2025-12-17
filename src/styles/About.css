@@ -1,0 +1,278 @@
+.about-page {
+  min-height: 100vh;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, var(--primary) 0%, #074a8e 100%);
+  padding: 4rem 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.3rem;
+  color: var(--secondary);
+  font-weight: 300;
+}
+
+.about-story {
+  padding: 5rem 0;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.story-text h2 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.story-text p {
+  color: var(--dark-gray);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.story-image .image-placeholder {
+  background: linear-gradient(135deg, var(--primary) 0%, #074a8e 100%);
+  border-radius: 20px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  box-shadow: 0 20px 60px rgba(5, 49, 97, 0.2);
+}
+
+.story-photo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(5, 49, 97, 0.2);
+}
+
+.values-section {
+  background: var(--light-gray);
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary) 0%, #074a8e 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--white);
+}
+
+.value-card h3 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: var(--dark-gray);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.casher-section {
+  padding: 5rem 0;
+}
+
+.casher-content h2 {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.casher-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.casher-block {
+  background: var(--light-gray);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--secondary);
+}
+
+.casher-block h3 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.casher-block p {
+  color: var(--dark-gray);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.gallery-section {
+  padding: 5rem 0;
+  background: var(--white);
+}
+
+.gallery-intro {
+  text-align: center;
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 250px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.team-section {
+  background: var(--light-gray);
+  padding: 5rem 0;
+}
+
+.team-description {
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.team-description h2 {
+  margin-bottom: 2rem;
+}
+
+.team-description p {
+  color: var(--dark-gray);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-hero p {
+    font-size: 1.1rem;
+  }
+
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .story-text h2 {
+    font-size: 2rem;
+  }
+
+  .story-image .image-placeholder,
+  .story-photo {
+    height: 300px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .casher-details {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    height: 200px;
+  }
+
+  .team-description {
+    padding: 2rem 1.5rem;
+  }
+}

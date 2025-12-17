@@ -1,0 +1,150 @@
+<mjml>
+  <mj-head>
+    <mj-title>Confirmation de réservation - Ôgüsto</mj-title>
+    <mj-preview>Merci pour votre réservation chez Ôgüsto</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Spectral', 'Georgia', serif" />
+      <mj-text font-size="16px" color="#333333" line-height="24px" />
+      <mj-section padding="20px" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .gold { color: #CFA058; }
+      .navy { color: #053161; }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f4f4f4">
+    <!-- Header -->
+    <mj-section background-color="#053161" padding="40px 20px">
+      <mj-column>
+        <mj-image
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/5c/b6/a7/logo-o-gusto.jpg?w=500&h=-1&s=1"
+          alt="Ôgüsto"
+          width="200px"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Content -->
+    <mj-section background-color="#ffffff" padding="40px 30px">
+      <mj-column>
+        <mj-text font-size="28px" font-weight="600" color="#053161" align="center" padding-bottom="20px">
+          Réservation Confirmée
+        </mj-text>
+
+        <mj-text font-size="18px" padding-bottom="20px">
+          Bonjour {{var:name:""}},
+        </mj-text>
+
+        <mj-text>
+          Nous avons bien reçu votre demande de réservation et nous vous en remercions. Notre équipe va traiter votre demande et vous recevrez une confirmation définitive sous 24 heures.
+        </mj-text>
+
+        <mj-divider border-color="#CFA058" border-width="2px" padding="30px 0" />
+
+        <!-- Reservation Details -->
+        <mj-text font-size="20px" font-weight="600" color="#053161" padding-bottom="20px">
+          Détails de votre réservation
+        </mj-text>
+
+        <mj-table>
+          <tr style="border-bottom: 1px solid #eeeeee;">
+            <td style="padding: 12px 0; font-weight: 600; color: #053161;">Date</td>
+            <td style="padding: 12px 0; text-align: right;">{{var:date:""}}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #eeeeee;">
+            <td style="padding: 12px 0; font-weight: 600; color: #053161;">Heure</td>
+            <td style="padding: 12px 0; text-align: right;">{{var:time:""}}</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #eeeeee;">
+            <td style="padding: 12px 0; font-weight: 600; color: #053161;">Nombre de personnes</td>
+            <td style="padding: 12px 0; text-align: right;">{{var:guests:""}} personne(s)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #eeeeee;">
+            <td style="padding: 12px 0; font-weight: 600; color: #053161;">Téléphone</td>
+            <td style="padding: 12px 0; text-align: right;">{{var:phone:""}}</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 0; font-weight: 600; color: #053161;">Email</td>
+            <td style="padding: 12px 0; text-align: right;">{{var:email:""}}</td>
+          </tr>
+        </mj-table>
+
+        <mj-text padding-top="20px" font-style="italic" color="#666666" font-size="14px">
+          {{var:message:""}}
+        </mj-text>
+
+        <mj-divider border-color="#eeeeee" border-width="1px" padding="30px 0 20px 0" />
+
+        <mj-text font-size="20px" font-weight="600" color="#053161" padding-bottom="15px">
+          Informations pratiques
+        </mj-text>
+
+        <mj-text>
+          <strong style="color: #053161;">Adresse :</strong><br/>
+          98 Avenue des Ternes<br/>
+          75017 Paris<br/>
+          Métro : Neuilly Porte Maillot (Ligne 1)
+        </mj-text>
+
+        <mj-text>
+          <strong style="color: #053161;">Téléphone :</strong><br/>
+          01 45 74 41 30
+        </mj-text>
+
+        <mj-text>
+          <strong style="color: #CFA058;">Restaurant 100% Casher Halavi</strong><br/>
+          Supervisé par le Beth-Din de Paris
+        </mj-text>
+
+
+      </mj-column>
+    </mj-section>
+
+    <!-- Deliveroo Section -->
+    <mj-section background-color="#00CCBC" padding="40px 30px">
+      <mj-column>
+        <mj-text font-size="24px" font-weight="700" color="#ffffff" align="center" padding-bottom="10px">
+          🛵 Commandez en ligne !
+        </mj-text>
+
+        <mj-text font-size="16px" color="#ffffff" align="center" padding-bottom="25px" line-height="24px">
+          Pas le temps de vous déplacer ? Retrouvez toutes nos spécialités italiennes casher sur Deliveroo et faites-vous livrer directement chez vous !
+        </mj-text>
+
+        <mj-button background-color="#ffffff" color="#00CCBC" font-size="18px" font-weight="700" padding="15px 40px" border-radius="50px" inner-padding="15px 40px" href="https://deliveroo.fr/en/menu/paris/ternes-maillot/o-gusto">
+          🚀 Commander sur Deliveroo
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Important Notice -->
+    <mj-section background-color="#FFF9F0" padding="30px">
+      <mj-column>
+        <mj-text font-size="14px" color="#666666" align="center">
+          <strong style="color: #CFA058;">Important :</strong> Cette réservation sera confirmée par notre équipe sous 24 heures. Si vous ne recevez pas de confirmation, veuillez nous contacter au 01 45 74 41 30.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#053161" padding="30px 20px">
+      <mj-column>
+        <mj-text color="#ffffff" align="center" font-size="14px">
+          Nous sommes impatients de vous accueillir !
+        </mj-text>
+        <mj-text color="#CFA058" align="center" font-size="16px" font-weight="600" padding-top="10px">
+          L'équipe Ôgüsto
+        </mj-text>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" padding-top="20px" align="center">
+          <mj-social-element name="facebook" href="https://facebook.com/ogusto" background-color="#CFA058" />
+          <mj-social-element name="instagram" href="https://instagram.com/ogusto" background-color="#CFA058" />
+        </mj-social>
+        <mj-text color="#ffffff" align="center" font-size="12px" padding-top="20px">
+          98 Avenue des Ternes, 75017 Paris<br/>
+          © 2024 Ôgüsto - Gastronomie Italienne Casher
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
