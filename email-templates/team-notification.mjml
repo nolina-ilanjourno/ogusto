@@ -1,0 +1,196 @@
+<mjml>
+  <mj-head>
+    <mj-title>Nouvelle réservation - Ôgüsto</mj-title>
+    <mj-preview>Nouvelle demande de réservation reçue</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'Spectral', 'Georgia', serif" />
+      <mj-text font-size="16px" color="#333333" line-height="24px" />
+      <mj-section padding="20px" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .gold { color: #CFA058; }
+      .navy { color: #053161; }
+      .badge { background-color: #CFA058; color: white; padding: 5px 15px; border-radius: 20px; font-weight: 600; }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f4f4f4">
+    <!-- Header -->
+    <mj-section background-color="#053161" padding="30px 20px">
+      <mj-column>
+        <mj-text color="#ffffff" font-size="24px" font-weight="600" align="center">
+          🔔 Nouvelle Réservation
+        </mj-text>
+        <mj-text color="#CFA058" font-size="14px" align="center" padding-top="5px">
+          Demande reçue le {{var:submission_date:""}} à {{var:submission_time:""}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Alert Box -->
+    <mj-section background-color="#FFF9F0" padding="20px">
+      <mj-column>
+        <mj-text align="center" font-size="16px" font-weight="600" color="#053161">
+          ⚠️ ACTION REQUISE : Confirmer cette réservation sous 24h
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Content -->
+    <mj-section background-color="#ffffff" padding="40px 30px">
+      <mj-column>
+        <mj-text font-size="22px" font-weight="600" color="#053161" padding-bottom="20px">
+          Informations Client
+        </mj-text>
+
+        <mj-table>
+          <tr style="background-color: #f8f8f8;">
+            <td colspan="2" style="padding: 15px; font-size: 18px; font-weight: 600; color: #053161;">
+              {{var:name:""}}
+            </td>
+          </tr>
+          <tr style="border-bottom: 1px solid #eeeeee;">
+            <td style="padding: 12px 15px; font-weight: 600; color: #666; width: 150px;">📧 Email</td>
+            <td style="padding: 12px 15px;">
+              <a href="mailto:{{var:email:""}}" style="color: #053161; text-decoration: none;">{{var:email:""}}</a>
+            </td>
+          </tr>
+          <tr style="border-bottom: 1px solid #eeeeee;">
+            <td style="padding: 12px 15px; font-weight: 600; color: #666;">📱 Téléphone</td>
+            <td style="padding: 12px 15px;">
+              <a href="tel:{{var:phone:""}}" style="color: #053161; text-decoration: none;">{{var:phone:""}}</a>
+            </td>
+          </tr>
+        </mj-table>
+
+        <mj-divider border-color="#CFA058" border-width="2px" padding="30px 0" />
+
+        <mj-text font-size="22px" font-weight="600" color="#053161" padding-bottom="20px">
+          Détails de la Réservation
+        </mj-text>
+
+        <mj-table>
+          <tr style="background-color: #053161;">
+            <td style="padding: 15px; color: white; font-weight: 600; width: 150px;">📅 Date</td>
+            <td style="padding: 15px; color: white; font-size: 18px; font-weight: 600;">
+              {{var:date:""}}
+            </td>
+          </tr>
+          <tr style="background-color: #074A8E;">
+            <td style="padding: 15px; color: white; font-weight: 600;">🕐 Heure</td>
+            <td style="padding: 15px; color: white; font-size: 18px; font-weight: 600;">
+              {{var:time:""}}
+            </td>
+          </tr>
+          <tr style="background-color: #CFA058;">
+            <td style="padding: 15px; color: white; font-weight: 600;">👥 Personnes</td>
+            <td style="padding: 15px; color: white; font-size: 18px; font-weight: 600;">
+              {{var:guests:""}} personne(s)
+            </td>
+          </tr>
+        </mj-table>
+
+        <mj-divider border-color="#eeeeee" border-width="1px" padding="30px 0 20px 0" />
+
+        <!-- Message du client -->
+        <mj-text font-size="18px" font-weight="600" color="#053161" padding-bottom="15px">
+          💬 Message du client
+        </mj-text>
+
+        <mj-text background-color="#f8f8f8" padding="20px" border-radius="8px" font-size="15px" color="#333">
+          {{var:message:"Aucun message spécifique"}}
+        </mj-text>
+
+        <mj-divider border-color="#eeeeee" border-width="1px" padding="30px 0 20px 0" />
+
+        <!-- Quick Actions -->
+        <mj-text font-size="18px" font-weight="600" color="#053161" padding-bottom="15px">
+          ⚡ Actions rapides
+        </mj-text>
+
+        <mj-button background-color="#28a745" color="white" font-size="16px" font-weight="600" padding="10px 0">
+          ✓ Confirmer la réservation
+        </mj-button>
+
+        <mj-button background-color="#053161" color="white" font-size="14px" padding="10px 0">
+          📞 Appeler le client
+        </mj-button>
+
+        <mj-button background-color="#dc3545" color="white" font-size="14px" padding="10px 0">
+          ✗ Refuser (Restaurant complet)
+        </mj-button>
+
+      </mj-column>
+    </mj-section>
+
+    <!-- Important Notes -->
+    <mj-section background-color="#FFF3CD" padding="30px">
+      <mj-column>
+        <mj-text font-size="16px" font-weight="600" color="#856404" padding-bottom="10px">
+          📋 Points à vérifier :
+        </mj-text>
+        <mj-text font-size="14px" color="#856404" line-height="22px">
+          • Vérifier la disponibilité pour {{var:guests:""}} personnes<br/>
+          • Confirmer que le jour/heure demandés sont bien dans nos horaires d'ouverture<br/>
+          • Si groupe > 10 personnes : prévoir aménagement spécial<br/>
+          • Allergies/régimes spéciaux mentionnés dans le message<br/>
+          • Envoyer la confirmation au client sous 24h maximum
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Horaires de référence -->
+    <mj-section background-color="#ffffff" padding="30px">
+      <mj-column>
+        <mj-text font-size="16px" font-weight="600" color="#053161" padding-bottom="15px">
+          🕐 Rappel des horaires
+        </mj-text>
+        <mj-table>
+          <tr style="border-bottom: 1px solid #eeeeee;">
+            <td style="padding: 8px 0; font-weight: 600; color: #053161;">Lun-Jeu</td>
+            <td style="padding: 8px 0; text-align: right;">11h30-16h00 / 19h00-00h00</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #eeeeee;">
+            <td style="padding: 8px 0; font-weight: 600; color: #053161;">Vendredi</td>
+            <td style="padding: 8px 0; text-align: right; color: #dc3545; font-weight: 600;">FERMÉ</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #eeeeee;">
+            <td style="padding: 8px 0; font-weight: 600; color: #053161;">Samedi</td>
+            <td style="padding: 8px 0; text-align: right;">21h00-01h00</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px 0; font-weight: 600; color: #053161;">Dimanche</td>
+            <td style="padding: 8px 0; text-align: right;">12h00-00h00 (non-stop)</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- Deliveroo Info -->
+    <mj-section background-color="#E8F5F4" padding="30px">
+      <mj-column>
+        <mj-text font-size="16px" font-weight="600" color="#053161" padding-bottom="15px" align="center">
+          📱 Commandes en ligne Deliveroo
+        </mj-text>
+        <mj-text font-size="14px" align="center" padding-bottom="15px">
+          Rappel : Les clients peuvent également commander en ligne via notre page Deliveroo
+        </mj-text>
+        <mj-button background-color="#00CCBC" color="#ffffff" font-size="14px" padding="10px 0" href="https://deliveroo.fr/en/menu/paris/ternes-maillot/o-gusto">
+          Voir les commandes Deliveroo
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#053161" padding="30px 20px">
+      <mj-column>
+        <mj-text color="#CFA058" align="center" font-size="14px">
+          Système de réservation - Ôgüsto
+        </mj-text>
+        <mj-text color="#ffffff" align="center" font-size="12px" padding-top="10px">
+          98 Avenue des Ternes, 75017 Paris<br/>
+          01 45 74 41 30
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
