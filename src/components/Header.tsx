@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import '../styles/Header.css';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import "../styles/Header.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
   const navLinks = [
-    { to: '/', label: 'Accueil' },
-    { to: '/menu', label: 'Menu' },
-    { to: '/about', label: 'À Propos' },
-    { to: '/reservation', label: 'Réservation' },
-    { to: '/contact', label: 'Contact' },
+    { to: "/", label: "Accueil" },
+    { to: "/menu", label: "Menu" },
+    { to: "/about", label: "À Propos" },
+    { to: "/reservation", label: "Réservation" },
+    { to: "/contact", label: "Contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -23,7 +23,11 @@ const Header = () => {
       <div className="container">
         <nav className="nav">
           <Link to="/" className="logo">
-            <img src="/logo-cropped.png" alt="Ôgüsto - Gastronomie Italienne" className="logo-image" />
+            <img
+              src="./logo-cropped.png"
+              alt="Ôgüsto - Gastronomie Italienne"
+              className="logo-image"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -32,7 +36,7 @@ const Header = () => {
               <li key={link.to}>
                 <Link
                   to={link.to}
-                  className={isActive(link.to) ? 'active' : ''}
+                  className={isActive(link.to) ? "active" : ""}
                 >
                   {link.label}
                 </Link>
@@ -66,7 +70,7 @@ const Header = () => {
             <motion.div
               className="mobile-menu"
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
+              animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
             >
@@ -80,7 +84,7 @@ const Header = () => {
                   >
                     <Link
                       to={link.to}
-                      className={isActive(link.to) ? 'active' : ''}
+                      className={isActive(link.to) ? "active" : ""}
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {link.label}
